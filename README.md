@@ -1,6 +1,6 @@
 # SmartWateringSystem
 
- Projenin amacı tarlalardaki ağaçların mobil kontrol ile sulama işleminin yapılmasıdır. Bu işlemler için Android Clirnt,Java Server-Client, Java Client Bloklarını birbirleri ile haberleşmelerini kapsamaktadır.
+ Projenin amacı tarlalardaki ağaçların mobil kontrol ile sulama işleminin yapılmasıdır. Bu işlemler için Android Client,Java Server-Client, Java Client Bloklarını birbirleri ile haberleşmelerini kapsamaktadır.
 Client kısmı ağaçların bulunduğu tarlalarda microişlemciler yardımıyla buradaki Nem ve Sıcaklık bilgilerini ölçümüne sağlamakta ve merkezde bulunan Server-Client ile habarlaşmeyi sağlamaktadır. Ayrıca nem ve sıcaklık ölçülerinin eşik sınırlarına ulaştıklarında otomatik olarak sulama işlemini gerçekleştirmektedir.
 Server-Client bloğu kullanıcıların bilgilerini , sahip oldukları tarlaların bilgisi ve bu tarlaların geriye dönük nem ve sıcaklık bilgilerini veritabanında bulundurmaktadır.Ayrıca Android Client'den gelen komutları alarak bu komutları ilgili tarlalara gönderme işlemini yapmaktadır.
 Android Client bloğu kayıtlı kullanıcıların giriş yapabildiği , var olan kullanıcıların tarla bilgilerini ekranına getirmektedir. Ayrıca kullanıcılar tarlalarını nem ve sıcaklık bilgilerini anlık öğrenebilmektedir. Bu bilgilere bakılarak tarlalara sulama komutu gönderilebilinmektedir.
