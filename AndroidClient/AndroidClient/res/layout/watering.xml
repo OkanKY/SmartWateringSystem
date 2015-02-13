@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bdin"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/mainMenuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/watering"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/watering"
+        android:background="@drawable/rtrn" />
+
+      
+
+      <TextView
+          android:id="@+id/inhty"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+         
+          android:layout_marginTop="24dp"
+          android:background="@drawable/font"
+          android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <TextView
+          android:id="@+id/intete"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/inhty"
+          android:layout_marginTop="30dp"
+          android:background="@drawable/font"
+          android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <Button
+          android:id="@+id/watering"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_marginBottom="105dp"
+          android:background="@drawable/wtrng" />
+
+      <TextView
+          android:id="@+id/textWatering"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/mainMenuu"
+          android:layout_marginTop="20dp"
+          android:background="@drawable/font"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <EditText
+          android:id="@+id/editTextTime"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/mainMenuu"
+          android:layout_alignParentLeft="true"
+          android:layout_marginBottom="16dp"
+          android:background="@drawable/font"
+          android:drawablePadding="10dp"
+          android:ems="10"
+          android:hint="Enter Watering Time"
+          android:imeOptions="actionNext"
+          android:inputType="text"
+          android:padding="10dp"
+          android:singleLine="true" >
+
+          <requestFocus />
+      </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bdflist"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/reflesh"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
+        android:background="@drawable/reflesh"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/exitfield"
+        android:layout_width="143dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/reflesh"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/exit"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout1"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/exitfield"
+          android:orientation="vertical"
+          android:padding="20dp" >
+           
+         <ListView
+             android:id="@+id/listView1"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" />
+ </LinearLayout>
+</RelativeLayout>

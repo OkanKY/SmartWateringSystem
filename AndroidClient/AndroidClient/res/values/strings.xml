@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!!!</string>
+    <string name="sayfa_1">Sayfa 1</string>
+    <string name="sayfa_2">Sayfa 2</string>
+    <string name="ikinci_sayfayi_ac">İkinci sayfayı aç</string>
+    <string name="reflesh">Reflesh</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="title_araba_list">Arabalar</string>
+    <string name="title_araba_detail">Araba Detail</string>
+
+</resources>
