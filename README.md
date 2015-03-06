@@ -12,3 +12,4 @@ Android Client bloğu kayıtlı kullanıcıların giriş yapabildiği , var olan
      sağlamaktadır."                                                                                                        
      *Server-Client bloğu java soap client'i kullanarak Client bloğuna komut göndermesinde kullanılmıştır.
      *Ayrıca tüm haberleşmeler Soap(XML) üzerinden yapılmıştır.
+Projenin şuanda tarlalardan sıcaklık ve nem bilgilerini Cliente bildirecek olan Microişlemci Bloğu yapım aşamasındadır.
