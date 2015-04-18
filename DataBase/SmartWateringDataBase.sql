@@ -1,0 +1,35 @@
+CREATE TABLE USERLOGIN(
+	UserName nvarchar(25) NOT NULL,
+	Password nvarchar(25) NOT NULL,
+	Status Bit ,
+	PRIMARY KEY (UserName),
+) ;
+CREATE TABLE FIELD(
+
+	FieldID int NOT NULL  IDENTITY (1,1),
+	FieldName nvarchar(25) NOT NULL,
+	FieldUrl nvarchar(50) NOT NULL,
+	PRIMARY KEY (FieldID),
+) ;
+CREATE TABLE FIELDINFORMATION(
+	FieldID int NOT NULL,
+	DateInformation datetime NOT NULL,
+    humidity int NOT NULL,
+	temperature int NOT NULL,
+	PRIMARY KEY (FieldID,DateInformation),
+    CONSTRAINT FIELDSIN
+	FOREIGN  KEY (FieldID) REFERENCES FIELD (FieldID)
+	ON DELETE CASCADE ,
+);
+CREATE TABLE LOGINFIELD(
+
+	FieldID int NOT NULL ,
+	UserName nvarchar(25) NOT NULL,
+	PRIMARY KEY (FieldID,UserName),
+	CONSTRAINT FIELDS
+	FOREIGN  KEY (FieldID) REFERENCES FIELD (FieldID)
+	ON DELETE CASCADE ,
+	CONSTRAINT USERLOGINS
+	FOREIGN  KEY (UserName) REFERENCES USERLOGIN (UserName)
+	ON DELETE CASCADE 
+) ;
